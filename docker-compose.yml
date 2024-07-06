@@ -1,0 +1,11 @@
+version: '3'
+services:
+  api:
+    image: ghcr.io/s2d-io/mindgraph-api
+    extra_hosts:
+      - database:host-gateway
+    ports:
+      - 8080:8080
+    env_file:
+      - .env
+      
