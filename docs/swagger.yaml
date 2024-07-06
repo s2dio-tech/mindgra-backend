@@ -1,0 +1,14 @@
+info:
+  contact: {}
+paths:
+  /users/:
+    get:
+      consumes:
+      - application/json
+      description: user registration
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+swagger: "2.0"
